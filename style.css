@@ -1,0 +1,11 @@
+.header-top-container {
+    display: flex;
+}
+
+.header-top-left {
+}
+
+.header-top-right {
+    margin-left: auto;
+    margin-right: 100px;
+}
