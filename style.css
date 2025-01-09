@@ -1,10 +1,16 @@
 body {
     margin: 0;
     font-family: 'Roboto';
+    box-sizing: border-box;
 }
 
 header {
+    display: flex;
+    flex-direction: column;
     background-color: #1F2937;
+    padding: 24px;
+    height: 450px;
+    gap: 100px;
 }
 
 .header-top-container {
@@ -14,18 +20,24 @@ header {
 
 .header-left {
     margin-left: 200px;
+    display: flex;
 }
 
 .header-left h1 {
+    margin: 0;
     font-size: 48px;
     color: #f9faf8;
     font-weight: 900;
+
 }
 
 /* secondary hero text */
 .header-left p {
+    margin: 0;
     font-size: 18px;
     color: #e5e7eb;
+    width: 450px;
+    text-wrap: wrap;
 }
 
 .hero-logo-text {
@@ -37,7 +49,7 @@ header {
 .header-right {
     display: flex;
     margin-left: auto;
-    margin-right: 200px;
+    margin-right: 300px;
     width: 400px;
     justify-content: space-between;
 }
@@ -45,4 +57,34 @@ header {
 a {
     text-decoration: none;
     color: #e5e7eb;
+}
+
+img {
+    width: 800px;
+    height: 240px;
+    margin-left: auto;
+    margin-right: 300px;
+}
+
+
+button {
+    background-color: #3882F6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.boxes-container {
+    display: flex;
+}
+
+
+.boxes-container div{
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;    
+    border: 1px solid black;
 }
