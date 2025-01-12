@@ -1,17 +1,27 @@
+/* webpage flex container */
 body {
-    margin: 0;
+    display: flex;
     font-family: 'Roboto';
+    flex-direction: column;
+    /*  Modify */
     box-sizing: border-box;
+    height: 3000px;
+    margin: 0;
 }
 
+
+/* webpage flex item 1 */
+/* flex container */
 header {
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
     padding: 24px;
-    height: 450px;
     gap: 100px;
+    flex: 1;
+    justify-content: center;
 }
+
 
 .header-top-container {
     display: flex;
@@ -28,7 +38,6 @@ header {
     font-size: 48px;
     color: #f9faf8;
     font-weight: 900;
-
 }
 
 /* secondary hero text */
@@ -67,7 +76,7 @@ img {
 }
 
 
-button {
+.button1 {
     background-color: #3882F6;
     color: white;
     padding: 10px 20px;
@@ -79,12 +88,126 @@ button {
 
 .boxes-container {
     display: flex;
+    justify-content: center;
+    gap: 60px;
 }
 
 
-.boxes-container div{
+.box{
     box-sizing: border-box;
-    width: 100px;
-    height: 100px;    
+    width: 145px;
+    height: 145px;    
     border: 1px solid black;
+    border-radius: 10px;
+    border: 3px solid blue;
+}
+
+.box-group {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    gap: 8px;
+}
+
+.box-group-p {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+    color: blue;
+}
+
+/* flex items 2 and 3 */
+.section1 {
+    border: 1px solid black;
+    flex: 1;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section2 {
+    display: flex;
+    border: 1px solid black;
+    flex: 1;    
+    background-color: #E5E7EB;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* flex container */
+.quote-ps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+}
+
+.quote-p {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+}
+
+.quote-attribution {
+    margin-left: auto;
+    font-weight: bold; /* same as 700 */
+}
+
+.rand-text-h1 {
+    text-align: center;
+    font-size: 36px;
+    color:  #1F2937;
+    font-weight: 900;
+}
+
+/* webpage flex item 4 */
+.section3-container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    border: 1px solid black;
+    align-items: center;
+    color: white;
+}
+
+.call-to-action-container {
+    display: flex;
+    background-color: #3882F6;
+    align-items: center;
+    width: 75%;
+    justify-content: space-around;
+    border-radius: 7.5px;
+    padding: 50px 0;
+}
+
+.call-to-action-h2, .call-to-action-p {
+    margin: 0;
+    padding: 0;
+}
+
+.call-to-action-p {
+    opacity: 0.7;
+}
+
+.call-to-action-button {
+    border: 2px white solid;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 24px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* webpage flex item 4 */
+footer {
+    display: flex;
+    flex: 1;
+    background-color: #1F2937;
+    color: white;
+    justify-content: center;
+    align-items: center;
 }
