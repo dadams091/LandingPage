@@ -3,76 +3,89 @@ body {
     display: flex;
     font-family: 'Roboto';
     flex-direction: column;
-    /*  Modify */
     box-sizing: border-box;
-    height: 3000px;
+    /*  Modify */
+    height: 2500px;
     margin: 0;
 }
-
 
 /* webpage flex item 1 */
 /* flex container */
+/* Holds 2 flex items */
 header {
     display: flex;
-    flex-direction: column;
-    background-color: #1F2937;
-    padding: 24px;
-    gap: 100px;
     flex: 1;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    background-color: #1F2937;
+    padding: 24px 0;
+    /* Separate top and bottom headers */
+    gap: 100px;
 }
 
+    /* HEADER flex item #1 */
+    .header-top-container {
+        display: flex;
+        margin: 0;
+    }
 
-.header-top-container {
-    display: flex;
+        .hero-logo-text {
+            color: #f9faf8;
+            font-weight: bold;
+            font-size: 24px;
+            margin-left: 200px;
+        }
+
+        .header-top-right {
+            display: flex;
+            margin-left: auto;
+            margin-right: 200px;
+            width: 400px;
+            justify-content: space-between;
+        }
+    
+    /* HEADER flex item #2 */
+    .header-bottom-container {
+        display: flex;
+        margin-left: 200px;
+    }
+
+        a {
+            text-decoration: none;
+            color: #e5e7eb;
+        }
+
+/* secondary hero text */
+.secondary-hero-text {
     margin: 0;
+    font-size: 18px;
+    color: #e5e7eb;
+    text-wrap: wrap;
 }
 
-.header-left {
-    margin-left: 200px;
-    display: flex;
+.left {
+    width: 450px;
+
 }
 
-.header-left h1 {
+.hero-text {
+    width: 400px;
+
+}
+
+.header-bottom-container h1 {
     margin: 0;
     font-size: 48px;
     color: #f9faf8;
     font-weight: 900;
 }
 
-/* secondary hero text */
-.header-left p {
-    margin: 0;
-    font-size: 18px;
-    color: #e5e7eb;
-    width: 450px;
-    text-wrap: wrap;
-}
-
-.hero-logo-text {
-    color: #f9faf8;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.header-right {
-    display: flex;
-    margin-left: auto;
-    margin-right: 300px;
-    width: 400px;
-    justify-content: space-between;
-}
-
-a {
-    text-decoration: none;
-    color: #e5e7eb;
-}
-
 img {
-    width: 800px;
+    width: 450px;
     height: 240px;
     margin-left: auto;
-    margin-right: 300px;
+    margin-right: 200px;
 }
 
 
@@ -84,6 +97,7 @@ img {
     border-radius: 7px;
     cursor: pointer;
     font-weight: bold;
+    margin-top: 16px;
 }
 
 .boxes-container {
