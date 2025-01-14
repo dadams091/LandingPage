@@ -1,4 +1,5 @@
 /* webpage flex container */
+/* Holds 4 flex items (sections) */
 body {
     display: flex;
     font-family: 'Roboto';
@@ -9,7 +10,7 @@ body {
     margin: 0;
 }
 
-/* webpage flex item 1 */
+/* BODY flex item 1 */
 /* flex container */
 /* Holds 2 flex items */
 header {
@@ -44,6 +45,12 @@ header {
             width: 400px;
             justify-content: space-between;
         }
+
+            a {
+            text-decoration: none;
+            color: #e5e7eb;
+        }
+
     
     /* HEADER flex item #2 */
     .header-bottom-container {
@@ -51,131 +58,131 @@ header {
         margin-left: 200px;
     }
 
-        a {
-            text-decoration: none;
-            color: #e5e7eb;
+        .header-bottom-left {
+                width: 450px;
         }
 
-/* secondary hero text */
-.secondary-hero-text {
-    margin: 0;
-    font-size: 18px;
-    color: #e5e7eb;
-    text-wrap: wrap;
-}
+            .hero-text {
+                width: 400px;
+                margin: 0;
+                font-size: 48px;
+                color: #f9faf8;
+                font-weight: 900;
+            }
 
-.left {
-    width: 450px;
+            .secondary-hero-text {
+                margin: 0;
+                font-size: 18px;
+                color: #e5e7eb;
+                text-wrap: wrap;
+            }
+    
+            .sign-up-button {
+                background-color: #3882F6;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 7px;
+                cursor: pointer;
+                font-weight: bold;
+                margin-top: 16px;
+            }
+        
+    img {
+        width: 450px;
+        height: 240px;
+        margin-left: auto;
+        margin-right: 200px;
+    }
 
-}
 
-.hero-text {
-    width: 400px;
-
-}
-
-.header-bottom-container h1 {
-    margin: 0;
-    font-size: 48px;
-    color: #f9faf8;
-    font-weight: 900;
-}
-
-img {
-    width: 450px;
-    height: 240px;
-    margin-left: auto;
-    margin-right: 200px;
-}
-
-
-.button1 {
-    background-color: #3882F6;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 16px;
-}
-
-.boxes-container {
+/* BODY flex item #2 */
+/* FLEX CONTAINER */
+/* contains 2 flex items */
+.rand-info-section {
     display: flex;
-    justify-content: center;
-    gap: 60px;
-}
-
-
-.box{
-    box-sizing: border-box;
-    width: 145px;
-    height: 145px;    
-    border: 1px solid black;
-    border-radius: 10px;
-    border: 3px solid blue;
-}
-
-.box-group {
-    display: flex;
-    flex-direction: column;
-    width: 150px;
-    gap: 8px;
-}
-
-.box-group-p {
-    margin: 0;
-    font-size: 16px;
-    text-align: center;
-    color: blue;
-}
-
-/* flex items 2 and 3 */
-.section1 {
-    border: 1px solid black;
     flex: 1;    
-    display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 25px;
 }
 
-.section2 {
+    /* rand-info-section flex item #1 */    
+    .rand-info-header {
+        text-align: center;
+        font-size: 36px;
+        color:  #1F2937;
+        font-weight: 900;
+    }
+
+    /* rand-info-section flex item #2 */
+    /* FLEX CONTAINER w/ 4 flex items */
+    .boxes-container {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+    }
+
+        /* boxes-container 4 flex items */
+        /* 4 FLEX CONTAINERS - each has 2 flex items */
+        /* Each container is a box with text beneath */
+        .box-group {
+            display: flex;
+            flex-direction: column;
+            width: 150px;
+            gap: 8px;
+        }
+
+            /* 4 boxes */
+            .box{
+                /* CSS Box model = border box  */
+                box-sizing: border-box;
+                width: 150px; aspect-ratio: 1;
+                border-radius: 16px;
+                border: 4px solid rgb(124, 124, 237);
+            }
+            
+            /* 4 box texts */
+            .box-text {
+                margin: 0;
+                font-size: 16px;
+                text-align: center;
+            }
+
+
+/* BODY flex item #3 */
+/* FLEX CONTAINER */
+/* contains 1 flex item */
+.quote-section {
     display: flex;
-    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
     flex: 1;    
     background-color: #E5E7EB;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
+    /* quote section flex item */
+    /* FLEX CONTAINER w/ 2 flex items*/
+    .quote-section-content {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
 
-/* flex container */
-.quote-ps {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 75%;
-}
+        /* quote-section content flex item #1 */
+        .quote {
+            font-size: 36px;
+            font-style: italic;
+            font-weight: 300;
+            color: #1F2937;
+            margin: 0;
+        }
 
-.quote-p {
-    font-size: 36px;
-    font-style: italic;
-    font-weight: lighter;
-    color: #1F2937;
-}
+        .quote-attribution {
+            margin: 0 24px 0 auto;
+            font-weight: bold; /* same as 700 */
+            font-size: 24px
+        }
 
-.quote-attribution {
-    margin-left: auto;
-    font-weight: bold; /* same as 700 */
-}
-
-.rand-text-h1 {
-    text-align: center;
-    font-size: 36px;
-    color:  #1F2937;
-    font-weight: 900;
-}
 
 /* webpage flex item 4 */
 .section3-container {
