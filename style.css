@@ -5,8 +5,7 @@ body {
     font-family: 'Roboto';
     flex-direction: column;
     box-sizing: border-box;
-    /*  Modify */
-    height: 1900px;
+    height: 1900px; /*  Modify */
     margin: 0;
 }
 
@@ -94,6 +93,8 @@ header {
         height: 240px;
         margin-left: auto;
         margin-right: 190px;
+        object-fit: cover;
+        object-position: center 70%;
     }
 
 
@@ -160,15 +161,13 @@ header {
     flex: 1;    
     background-color: #E5E7EB;
 }
-
-    /* quote section flex item */
+    /* quote-section flex item #1 */
     /* FLEX CONTAINER w/ 2 flex items*/
     .quote-section-content {
         display: flex;
         flex-direction: column;
         width: 60%;
     }
-
         /* quote-section content flex item #1 */
         .quote {
             font-size: 36px;
@@ -177,7 +176,7 @@ header {
             color: #1F2937;
             margin: 0;
         }
-
+        /* quote-section content flex item #2 */
         .quote-attribution {
             margin: 0 24px 0 auto;
             font-weight: bold; /* same as 700 */
@@ -223,6 +222,7 @@ header {
         font-size: 18px;
         font-weight: 600;
         border: 2px white solid;
+        cursor: pointer;
     }
 
 /* BODY flex item #5 */
